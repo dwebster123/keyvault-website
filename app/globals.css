@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --kv-blue: #38B6FF;
+  --kv-blue-dark: #2A8FCC;
+  --kv-purple: #8B5CF6;
+  --kv-purple-light: #A78BFA;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0a0a0a;
+  color: white;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #38B6FF, #8B5CF6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-light {
+  background: linear-gradient(135deg, #38B6FF, #A78BFA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass {
+  background: rgba(56, 182, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(56, 182, 255, 0.15);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(56, 182, 255, 0.12);
+}
+
+.glass-card-light {
+  background: white;
+  border: 1px solid #e5e7eb;
+}
+
+.glass-button {
+  background: linear-gradient(135deg, rgba(56, 182, 255, 0.2), rgba(139, 92, 246, 0.2));
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(56, 182, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.glass-button:hover {
+  background: linear-gradient(135deg, rgba(56, 182, 255, 0.35), rgba(139, 92, 246, 0.35));
+  border-color: rgba(56, 182, 255, 0.5);
+  box-shadow: 0 0 30px rgba(56, 182, 255, 0.15);
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(56, 182, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.glass-input:focus {
+  border-color: rgba(56, 182, 255, 0.5);
+  box-shadow: 0 0 20px rgba(56, 182, 255, 0.1);
+  outline: none;
+}
+
+.glass-footer {
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0) 0%, rgba(56, 182, 255, 0.03) 100%);
+  border-top: 1px solid rgba(56, 182, 255, 0.1);
+}
+
+/* Feature cards on white section */
+.feature-card {
+  background: white;
+  border: 2px solid #38B6FF;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 30px rgba(56, 182, 255, 0.08);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  box-shadow: 0 8px 40px rgba(56, 182, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Deck-style dark section cards */
+.deck-card {
+  background: rgba(56, 182, 255, 0.04);
+  border: 1px solid rgba(56, 182, 255, 0.15);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.deck-card:hover {
+  border-color: rgba(56, 182, 255, 0.3);
+  box-shadow: 0 0 30px rgba(56, 182, 255, 0.08);
+}
