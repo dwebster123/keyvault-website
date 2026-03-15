@@ -8,6 +8,7 @@ export default function Home() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
+  const [formStatus, setFormStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
 
   useEffect(() => {
     setMounted(true)
@@ -354,7 +355,31 @@ export default function Home() {
             <div className="flex justify-center max-w-2xl mx-auto">
               <div className="glass-card p-10 rounded-3xl w-full">
                 <h3 className="text-3xl font-bold mb-8 text-white">Get in Touch</h3>
-                <form className="space-y-6" action="https://submit-form.com/tw6NCCMqs" method="POST">
+                <form className="space-y-6" onSubmit={async (e) => {
+                  e.preventDefault()
+                  setFormStatus('sending')
+                  const form = e.currentTarget
+                  const data = {
+                    name: (form.elements.namedItem('name') as HTMLInputElement).value,
+                    email: (form.elements.namedItem('email') as HTMLInputElement).value,
+                    message: (form.elements.namedItem('message') as HTMLTextAreaElement).value,
+                  }
+                  try {
+                    const res = await fetch('/api/contact', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify(data),
+                    })
+                    if (res.ok) {
+                      setFormStatus('sent')
+                      form.reset()
+                    } else {
+                      setFormStatus('error')
+                    }
+                  } catch {
+                    setFormStatus('error')
+                  }
+                }}>
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-white/70 mb-2">Name</label>
                     <input
@@ -386,11 +411,22 @@ export default function Home() {
                       placeholder="Tell us about your investment goals..."
                     />
                   </div>
+                  {formStatus === 'sent' && (
+                    <div className="text-green-400 text-center py-3 rounded-xl bg-green-400/10 border border-green-400/20">
+                      Message sent successfully! We&apos;ll be in touch soon.
+                    </div>
+                  )}
+                  {formStatus === 'error' && (
+                    <div className="text-red-400 text-center py-3 rounded-xl bg-red-400/10 border border-red-400/20">
+                      Something went wrong. Please try again or email us directly.
+                    </div>
+                  )}
                   <button
-                    className="glass-button w-full text-white py-4 rounded-xl text-lg font-semibold"
+                    className="glass-button w-full text-white py-4 rounded-xl text-lg font-semibold disabled:opacity-50"
                     type="submit"
+                    disabled={formStatus === 'sending'}
                   >
-                    Send Message
+                    {formStatus === 'sending' ? 'Sending...' : 'Send Message'}
                   </button>
                 </form>
               </div>
