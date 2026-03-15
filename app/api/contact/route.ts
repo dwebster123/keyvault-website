@@ -22,7 +22,7 @@ export async function POST(request: NextRequest) {
     }
 
     await resend.emails.send({
-      from: 'Key Vault Fund <contact@keyvaultfund.com>',
+      from: 'Key Vault Fund <contact@contacts.keyvaultfund.com>',
       to: CO_FOUNDERS,
       replyTo: email,
       subject: `New Contact Form Submission from ${name}`,
