@@ -77,7 +77,7 @@ export default function Home() {
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-kv-blue/15 rounded-full filter blur-3xl animate-pulse-slow" style={{ animationDelay: '2s' }} />
 
           <div className="container mx-auto px-4 relative z-10">
-            <div className="flex flex-col items-center justify-center text-center min-h-screen">
+            <div className="flex flex-col items-center justify-center text-center min-h-screen pt-24">
               <h1 className={`text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 md:mb-8 text-white leading-tight max-w-5xl transition-all duration-1000 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
                 Driving Secure Investment Into{' '}
                 <span className="gradient-text">Decentralized Finance</span>
@@ -109,7 +109,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(56,182,255,0.04),transparent_70%)]" />
 
           <div className="container mx-auto px-4 relative z-10">
-            <div className="text-center mb-20">
+            <div className="text-center mb-16">
               <div className={`inline-block px-6 py-2 rounded-full glass mb-6`}>
                 <span className="gradient-text font-medium">Key Features</span>
               </div>
@@ -188,7 +188,7 @@ export default function Home() {
         </section>
 
         {/* Team Section */}
-        <section id="team" className="py-32 relative overflow-hidden">
+        <section id="team" className="py-32 relative overflow-hidden bg-[#060d18]">
           <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-kv-purple/5 to-[#0a0a0a]" />
 
           <div className="container mx-auto px-4 relative z-10">
