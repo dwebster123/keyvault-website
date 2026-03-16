@@ -360,7 +360,7 @@ export default function Home() {
                   setFormStatus('sending')
                   const form = e.currentTarget
                   try {
-                    const res = await fetch('https://formspree.io/f/xformid', {
+                    const res = await fetch('https://formspree.io/f/xeerrqyl', {
                       method: 'POST',
                       headers: { 'Accept': 'application/json' },
                       body: new FormData(form),
