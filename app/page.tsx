@@ -66,7 +66,7 @@ export default function Home() {
 
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-screen flex items-center overflow-hidden">
+        <section className="relative flex items-center overflow-hidden">
           {/* Background gradients matching deck */}
           <div className="absolute inset-0 bg-gradient-to-br from-kv-blue/10 via-black to-kv-purple/15" />
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(139,92,246,0.15),transparent_50%)]" />
@@ -77,7 +77,7 @@ export default function Home() {
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-kv-blue/15 rounded-full filter blur-3xl animate-pulse-slow" style={{ animationDelay: '2s' }} />
 
           <div className="container mx-auto px-4 relative z-10">
-            <div className="flex flex-col items-center justify-center text-center min-h-screen pt-24">
+            <div className="flex flex-col items-center justify-center text-center pt-32 pb-20">
               <h1 className={`text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 md:mb-8 text-white leading-tight max-w-5xl transition-all duration-1000 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
                 Driving Secure Investment Into{' '}
                 <span className="gradient-text">Decentralized Finance</span>
@@ -469,6 +469,7 @@ export default function Home() {
     </div>
   )
 }
+
 
 
 
