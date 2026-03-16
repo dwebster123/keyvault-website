@@ -207,18 +207,14 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {/* Brett Nielsen */}
               <div className="glass-card rounded-3xl overflow-hidden group hover:border-kv-blue/30 transition-all duration-300">
-                <div className="relative w-full h-80 overflow-hidden bg-[#0a0a0a]">
+                <div className="relative w-full h-80 overflow-hidden bg-gradient-to-br from-[#0d1a2e] via-[#0a0a0a] to-[#0a0f1a]">
                   <Image
                     src="/images/brett.png"
                     alt="Brett Nielsen - Co-Founder at Key Vault Fund"
                     fill
-                    className="object-cover object-center scale-75 group-hover:scale-80 transition-transform duration-700"
-                    style={{ objectPosition: '50% 30%' }}
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                    style={{ objectPosition: '50% 15%', objectFit: 'contain' }}
                   />
-                  {/* Dark overlay to match Deven's dark background aesthetic */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a]/60 via-transparent to-[#0a0a0a]/40 mix-blend-multiply pointer-events-none" />
-                  {/* Teal accent in upper-left to match Deven's photo */}
-                  <div className="absolute top-0 left-0 w-32 h-32 bg-kv-blue/20 blur-2xl pointer-events-none" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl text-white font-bold mb-1">Brett Nielsen</h3>
@@ -473,4 +469,5 @@ export default function Home() {
     </div>
   )
 }
+
 
