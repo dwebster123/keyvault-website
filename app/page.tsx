@@ -213,11 +213,9 @@ export default function Home() {
                     alt="Brett Nielsen - Co-Founder at Key Vault Fund"
                     fill
                     className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                    style={{ filter: 'brightness(0.85) saturate(0.1)' }}
                   />
-                  {/* Dark overlay: kills the teal bg, keeps the subject */}
-                  <div className="absolute inset-0 bg-[#0a0a0a] mix-blend-color pointer-events-none" />
-                  {/* Subtle teal glow bottom-left to match Deven's photo */}
-                  <div className="absolute bottom-0 left-0 w-40 h-40 bg-kv-blue/25 blur-3xl pointer-events-none" />
+                  <div className="absolute bottom-0 left-0 w-40 h-40 bg-kv-blue/20 blur-3xl pointer-events-none" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl text-white font-bold mb-1">Brett Nielsen</h3>
@@ -472,6 +470,7 @@ export default function Home() {
     </div>
   )
 }
+
 
 
 
