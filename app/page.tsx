@@ -212,8 +212,7 @@ export default function Home() {
                     src="/images/brett.png"
                     alt="Brett Nielsen - Co-Founder at Key Vault Fund"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-700"
-                    style={{ objectPosition: '50% 15%', objectFit: 'contain' }}
+                    className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>
                 <div className="p-6">
@@ -469,5 +468,6 @@ export default function Home() {
     </div>
   )
 }
+
 
 
