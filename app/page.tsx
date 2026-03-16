@@ -153,7 +153,7 @@ export default function Home() {
                   <div className="w-10 h-10 bg-kv-blue rounded-lg flex items-center justify-center text-white font-bold">3</div>
                   <span className="text-kv-blue font-bold text-sm uppercase tracking-wide">Hedged Performance</span>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4">Built to Withstand the Worst Days</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Built to Capture the Upside, Regardless of Market Conditions</h3>
                 <p className="text-white/70 text-lg leading-relaxed">
                   Our automated hedging strategy maintains balance around the clock with many small trades, protecting capital during market downturns. While Bitcoin dropped 35% over a 12-month period, Key Vault&apos;s maximum drawdown was just 1.01%. Target APY range of 16-22% with ~20% actual rolling 365-day APY.
                 </p>
@@ -207,12 +207,12 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {/* Brett Nielsen */}
               <div className="glass-card rounded-3xl overflow-hidden group hover:border-kv-blue/30 transition-all duration-300">
-                <div className="relative w-full h-80 overflow-hidden bg-gradient-to-b from-kv-blue/10 to-transparent">
+                <div className="relative w-full h-80 overflow-hidden bg-gradient-to-br from-[#0d1a2e] via-[#0a0a0a] to-[#0a0f1a]">
                   <Image
                     src="/images/brett.png"
                     alt="Brett Nielsen - Co-Founder at Key Vault Fund"
                     fill
-                    className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>
                 <div className="p-6">
@@ -251,7 +251,7 @@ export default function Home() {
 
               {/* Deven Webster */}
               <div className="glass-card rounded-3xl overflow-hidden group hover:border-kv-blue/30 transition-all duration-300">
-                <div className="relative w-full h-80 overflow-hidden bg-gradient-to-b from-kv-blue/10 to-transparent">
+                <div className="relative w-full h-80 overflow-hidden bg-gradient-to-br from-[#0d1a2e] via-[#0a0a0a] to-[#0a0f1a]">
                   <Image
                     src="/images/deven.png"
                     alt="Deven Webster - Co-Founder at Key Vault Fund"
@@ -291,7 +291,7 @@ export default function Home() {
 
               {/* JD Beck */}
               <div className="glass-card rounded-3xl overflow-hidden group hover:border-kv-blue/30 transition-all duration-300">
-                <div className="relative w-full h-80 overflow-hidden bg-gradient-to-b from-kv-blue/10 to-transparent">
+                <div className="relative w-full h-80 overflow-hidden bg-gradient-to-br from-[#0d1a2e] via-[#0a0a0a] to-[#0a0f1a]">
                   <Image
                     src="/images/jd.png"
                     alt="JD Beck - Co-Founder at Key Vault Fund"
@@ -468,3 +468,4 @@ export default function Home() {
     </div>
   )
 }
+
