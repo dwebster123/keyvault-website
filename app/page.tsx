@@ -177,9 +177,11 @@ export default function Home() {
               <div className="deck-card max-w-2xl mx-auto text-center">
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Experience the Key Vault Advantage</h3>
                 <p className="text-white/60 mb-6 text-lg">Join investors who trust our proven strategies for consistent, risk-adjusted returns.</p>
-                <button className="bg-kv-blue text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-kv-blue-dark transition-all duration-300 transform hover:scale-105">
-                  Explore Investment Options
-                </button>
+                <a href="#contact">
+                  <button className="bg-kv-blue text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-kv-blue-dark transition-all duration-300 transform hover:scale-105">
+                    Explore Investment Options
+                  </button>
+                </a>
               </div>
             </div>
           </div>
