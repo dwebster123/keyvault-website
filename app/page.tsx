@@ -359,16 +359,11 @@ export default function Home() {
                   e.preventDefault()
                   setFormStatus('sending')
                   const form = e.currentTarget
-                  const data = {
-                    name: (form.elements.namedItem('name') as HTMLInputElement).value,
-                    email: (form.elements.namedItem('email') as HTMLInputElement).value,
-                    message: (form.elements.namedItem('message') as HTMLTextAreaElement).value,
-                  }
                   try {
-                    const res = await fetch('/api/contact', {
+                    const res = await fetch('https://formspree.io/f/xformid', {
                       method: 'POST',
-                      headers: { 'Content-Type': 'application/json' },
-                      body: JSON.stringify(data),
+                      headers: { 'Accept': 'application/json' },
+                      body: new FormData(form),
                     })
                     if (res.ok) {
                       setFormStatus('sent')
