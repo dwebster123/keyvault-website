@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/images/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/png" href="/images/kv-icon.png" />
         <link rel="icon" type="image/png" href="/images/icon-192.png" sizes="192x192" />
         <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
       </head>
@@ -45,3 +45,4 @@ export default function RootLayout({
     </html>
   )
 }
+
