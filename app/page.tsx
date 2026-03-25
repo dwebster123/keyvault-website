@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { ArrowRight, Target, TrendingUp, Shield, Zap, Linkedin, Menu, X } from 'lucide-react'
 
 export default function Home() {
@@ -455,8 +456,8 @@ export default function Home() {
           <div className="border-t border-kv-blue/10 pt-8 pb-12 relative z-10 flex flex-col md:flex-row justify-between items-center">
             <p className="text-white/50 text-lg mb-4 md:mb-0">&copy; 2025 Key Vault Fund. All rights reserved.</p>
             <div className="flex space-x-8">
-              <a href="#" className="text-white/50 hover:text-kv-blue transition-colors">Privacy Policy</a>
-              <a href="#" className="text-white/50 hover:text-kv-blue transition-colors">Terms of Service</a>
+              <Link href="/privacy" className="text-white/50 hover:text-kv-blue transition-colors">Privacy Policy</Link>
+              <Link href="/terms" className="text-white/50 hover:text-kv-blue transition-colors">Terms of Service</Link>
             </div>
           </div>
         </div>
