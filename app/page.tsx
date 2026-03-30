@@ -89,7 +89,7 @@ export default function Home() {
               </p>
 
               <div className={`flex flex-col sm:flex-row items-center gap-4 md:gap-6 mb-16 transition-all duration-1000 delay-400 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
-                <a href="/investor-portal">
+                <a href="https://portal.navfundservices.com/navportalcore/login" target="_blank" rel="noopener noreferrer">
                   <button className="glass-button text-white px-10 py-4 text-lg rounded-2xl group flex items-center font-semibold">
                     Investor Portal
                     <ArrowRight className="ml-3 h-6 w-6 transition-transform group-hover:translate-x-1" />
