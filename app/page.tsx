@@ -35,7 +35,7 @@ export default function Home() {
             <a href="#features" className="text-white/80 hover:text-kv-blue transition-colors font-medium">Features</a>
             <a href="#team" className="text-white/80 hover:text-kv-blue transition-colors font-medium">Team</a>
             <a href="#contact" className="text-white/80 hover:text-kv-blue transition-colors font-medium">Contact</a>
-            <a href="/investor-portal">
+            <a href="https://portal.navfundservices.com/navportalcore/login" target="_blank" rel="noopener noreferrer">
               <button className="glass-button text-white px-6 py-2 rounded-xl font-medium">
                 Investor Portal
               </button>
@@ -57,7 +57,7 @@ export default function Home() {
               <a href="#features" className="text-white/80 hover:text-kv-blue py-2" onClick={() => setMobileMenuOpen(false)}>Features</a>
               <a href="#team" className="text-white/80 hover:text-kv-blue py-2" onClick={() => setMobileMenuOpen(false)}>Team</a>
               <a href="#contact" className="text-white/80 hover:text-kv-blue py-2" onClick={() => setMobileMenuOpen(false)}>Contact</a>
-              <a href="/investor-portal">
+              <a href="https://portal.navfundservices.com/navportalcore/login" target="_blank" rel="noopener noreferrer">
                 <button className="glass-button text-white px-6 py-3 rounded-xl font-medium w-full">Investor Portal</button>
               </a>
             </div>
