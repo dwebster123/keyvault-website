@@ -1,8 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Key Vault Fund | Institutional-Grade DeFi Fund',
@@ -42,9 +39,8 @@ export default function RootLayout({
         <link rel="icon" type="image/png" href="/images/icon-192.png" sizes="192x192" />
         <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   )
 }
-
 
