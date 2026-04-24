@@ -9,10 +9,25 @@
   },
   "dependencies": {
     "lucide-react": "^0.468.0",
-    "next": "^14.2.0",
+    "next": "^16.2.4",
     "react": "^18.3.0",
     "react-dom": "^18.3.0",
-    "resend": "^6.9.3"
+    "resend": "^6.12.2"
+  },
+  "overrides": {
+    "svix": "1.92.2",
+    "anymatch": {
+      "picomatch": "2.3.2"
+    },
+    "micromatch": {
+      "picomatch": "2.3.2"
+    },
+    "readdirp": {
+      "picomatch": "2.3.2"
+    },
+    "tinyglobby": {
+      "picomatch": "4.0.4"
+    }
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
